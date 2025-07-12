@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <a href="index.html"><img src="icon.png" alt="Logo"></a>
+            <h1 style="color: antiquewhite;">Euxynus Service</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500">ACASĂ</a></li>
+                    <li><a href="">DESPRE NOI</a></li>
+                    <li><a href="">CONTACTEAZĂ-NE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="glassForm">
+            <h2>Autentificare</h2>
+            <form>
+                <input type="text" placeholder="Nume utilizator" required>
+                <input type="password" placeholder="Parolă" required>
+                <button type="submit">Conectează-te</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
